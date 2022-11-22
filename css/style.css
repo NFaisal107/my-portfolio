@@ -1,0 +1,22 @@
+html,
+body {
+    font-family: 'Heebo', sans-serif;
+    color: #21243d;
+}
+
+.blog-item h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+
+}
+
+
+.blog-item span {
+    color: #8695a4;
+}
+
+.blog-item p {
+    line-height: 24px;
+    font-weight: 400;
+}
