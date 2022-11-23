@@ -1,7 +1,18 @@
 html,
 body {
     font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
     color: #21243d;
+    background: #e5e5e5;
+}
+
+h1,
+p,
+h2,
+h3,
+h4 {
+    margin: 0;
 }
 
 .blog-item h3 {
@@ -13,10 +24,145 @@ body {
 
 
 .blog-item span {
-    color: #8695a4;
+    color: #8594a3;
 }
 
 .blog-item p {
     line-height: 24px;
     font-weight: 400;
+}
+
+header nav {
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+header nav li {
+    list-style: none;
+}
+
+/* header nav li:last-child {
+    margin-right: 60px;
+} */
+
+
+header nav li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    background: #fff;
+    padding: 158px 0;
+}
+
+.hero-section .hero-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-left {
+    max-width: 500px;
+}
+
+.hero-left h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+}
+
+.hero-left p {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero-left button {
+    margin-top: 38px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #000;
+    width: 208px;
+    height: 47px;
+    background: #FF6464;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+
+/*?  Post  Section*/
+
+.posts-section {
+    background: #EDF7FA;
+    padding: 30px;
+}
+
+.posts-section .posts-header {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-section .posts-header h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+}
+
+.posts-section .posts-header a {
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+.posts-section .posts {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.posts-section .posts {
+    display: flex;
+    gap: 20px;
+
+}
+
+.posts-section .post-item {
+    background:#fff;
+    max-width: 420px;
 }
