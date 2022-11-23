@@ -129,12 +129,15 @@ header nav li a {
 
 .posts-section {
     background: #EDF7FA;
-    padding: 30px;
+    padding: 32px 0;
+}
+
+.posts-section-inner {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .posts-section .posts-header {
-    max-width: 960px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,20 +152,126 @@ header nav li a {
 .posts-section .posts-header a {
     color: #00A8CC;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.posts-section .posts {
+.posts {
+    display: flex;
+    gap: 20px;
+}
+
+.post-item {
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    padding: 25px;
+}
+
+.post-item header h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+.post-item>div {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 11px;
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* ? Feature work sectionm */
+
+
+.featured-section {
+    background: #fff;
+    padding: 32px 0;
+}
+
+.featured-section-inner {
     max-width: 960px;
     margin: 0 auto;
 }
 
-.posts-section .posts {
-    display: flex;
-    gap: 20px;
 
+.featured-section .fs-header h3 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+    margin-bottom: 22px;
 }
 
-.posts-section .post-item {
-    background:#fff;
-    max-width: 420px;
+.fs-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 16px;
+}
+
+.fs-content h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    margin-bottom: 16px;
+}
+
+.fs-content div {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.fs-content .badge {
+    width: 60px;
+    height: 25px;
+    background: #142850;
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.fs-content .category {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695A4;
+}
+
+.fs-content p {
+    margin-top: 15;
+}
+
+
+@media (width <= 600px) {
+    .hero-section .hero-inner {
+        flex-direction: column-reverse;
+    }
+
+    .hero-left {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .hero-right {
+        margin-bottom: 30px;
+    }
 }
